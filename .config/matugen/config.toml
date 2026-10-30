@@ -1,0 +1,11 @@
+[config]
+
+[templates.qutebrowser]
+input_path = '/home/user/.config/matugen/templates/qutebrowser.py'
+output_path = '/home/user/.config/qutebrowser/dms-colors.py'
+# post_hook = "pgrep -x qutebrowser >/dev/null && qutebrowser ':config-source'"
+
+[templates.terminal]
+input_path = '~/.config/matugen/templates/sequences'
+output_path = '~/.cache/terminal-sequences'
+post_hook = "cat ~/.cache/terminal-sequences"
