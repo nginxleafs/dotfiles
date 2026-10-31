@@ -1,0 +1,30 @@
+{
+  "dmsAirDrop": {
+    "enabled": true
+  },
+  "batteryPlus": {
+    "enabled": true
+  },
+  "batteryOSD": {
+    "enabled": true
+  },
+  "tlpControl": {
+    "enabled": false
+  },
+  "tlpPowerProfile": {
+    "enabled": false
+  },
+  "librepods": {
+    "enabled": false
+  },
+  "calculator": {
+    "enabled": true,
+    "trigger": "="
+  },
+  "screenCaptureToolbar": {
+    "enabled": true
+  },
+  "quickCapture": {
+    "enabled": true
+  }
+}

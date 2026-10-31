@@ -1,0 +1,22 @@
+{
+  "lockfileVersion": 1,
+  "plugins": {
+    "calculator": {
+      "repo": "https://github.com/rochacbruno/DankCalculator",
+      "commit": "a27b80ad8c3dd42da11af83461674fb362817515"
+    },
+    "quickCapture": {
+      "repo": "https://github.com/hthienloc/dms-plugins",
+      "path": "quickCapture",
+      "commit": "1eb67b709f6ec661688978fc00d33bf763e144ec"
+    },
+    "screenCaptureToolbar": {
+      "repo": "https://github.com/JDKamalakar/DMS-ScreenCapture_Toolbar",
+      "commit": "ee2050e6398bbd1a0fc56df9bbd0468944e87aec"
+    },
+    "tlpControl": {
+      "repo": "https://github.com/nfrastack/dms-tlpControl",
+      "commit": "0b59c5b86ae9d864528c02bd670b6f75800714c5"
+    }
+  }
+}
