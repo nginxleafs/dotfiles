@@ -13,7 +13,6 @@ vim.keymap.set("n", "<leader>uv", function()
 end, { desc = "Toggle detailed diagnostics" })
 
 vim.keymap.set("n", ";", ":", { desc = "CMD enter command mode" })
-vim.keymap.set("i", "jk", "<ESC>")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })

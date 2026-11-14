@@ -7,9 +7,9 @@ return {
         n_completions = 1,
         context_window = 4056,
 
-        -- автотриггер при наборе текста во всех типах файлов
+        -- virtual text без автотриггера: вызов/переключение вручную по <A-]>
         virtualtext = {
-          auto_trigger_ft = { "*" },
+          auto_trigger_ft = {},
           keymap = {
             accept = "<A-y>",
             accept_line = "<A-l>",
@@ -19,7 +19,6 @@ return {
           },
         },
 
-        -- по желанию: быстрее реагировать (по умолчанию debounce 400, throttle 1000)
         debounce = 100,
         throttle = 300,
 

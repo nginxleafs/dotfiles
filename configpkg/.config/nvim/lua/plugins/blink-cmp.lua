@@ -32,7 +32,7 @@ return {
           auto_show = false,
         },
         ghost_text = {
-          enabled = false,
+          enabled = true,
         },
         trigger = {
           show_on_insert = false,

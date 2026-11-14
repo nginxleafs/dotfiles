@@ -2,6 +2,7 @@
   "LazyVim": { "branch": "main", "commit": "999700997f72227187d49d8b92667183dc7fc809" },
   "LuaSnip": { "branch": "master", "commit": "0abc8f390b278c3b4aabc4c004ac8a088b65cf24" },
   "base46": { "branch": "v3.0", "commit": "b3beb806e1a5de9ea883b9968274dd908a50ce94" },
+  "better-escape.nvim": { "branch": "master", "commit": "3f4bc0b326606264ff75967f59091b5ddada0554" },
   "blink-copilot": { "branch": "main", "commit": "7ad8209b2f880a2840c94cdcd80ab4dc511d4f39" },
   "blink.cmp": { "branch": "main", "commit": "78336bc89ee5365633bcf754d93df01678b5c08f" },
   "blink.lib": { "branch": "main", "commit": "fd9a48ebbe6ec30d5dfcc5b42c243941ccdca1aa" },

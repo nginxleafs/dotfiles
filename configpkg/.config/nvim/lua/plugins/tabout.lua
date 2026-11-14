@@ -1,42 +1,58 @@
 return {
-	{
-		"abecodes/tabout.nvim",
-		lazy = false,
-		config = function()
-			require("tabout").setup({
-				tabkey = "<Tab>", -- key to trigger tabout, set to an empty string to disable
-				backwards_tabkey = "<S-Tab>", -- key to trigger backwards tabout, set to an empty string to disable
-				act_as_tab = true, -- shift content if tab out is not possible
-				act_as_shift_tab = false, -- reverse shift content if tab out is not possible (if your keyboard/terminal supports <S-Tab>)
-				default_tab = "<C-t>", -- shift default action (only at the beginning of a line, otherwise <TAB> is used)
-				default_shift_tab = "<C-d>", -- reverse shift default action,
-				enable_backwards = true, -- well ...
-				completion = false, -- if the tabkey is used in a completion pum
-				tabouts = {
-					{ open = "'", close = "'" },
-					{ open = '"', close = '"' },
-					{ open = "`", close = "`" },
-					{ open = "(", close = ")" },
-					{ open = "[", close = "]" },
-					{ open = "{", close = "}" },
-				},
-				exclude = {}, -- tabout will ignore these filetypes
-			})
-		end,
-		dependencies = { -- These are optional
-			"nvim-treesitter/nvim-treesitter",
-			"L3MON4D3/LuaSnip",
-			"hrsh7th/nvim-cmp",
-		},
-		opt = true, -- Set this to true if the plugin is optional
-		event = "InsertCharPre", -- Set the event to 'InsertCharPre' for better compatibility
-		priority = 1000,
-	},
-	{
-		"L3MON4D3/LuaSnip",
-		keys = function()
-			-- Disable default tab keybinding in LuaSnip
-			return {}
-		end,
-	},
+  {
+    "abecodes/tabout.nvim",
+    event = "InsertEnter",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
+    opts = {
+      -- не перехватываем Tab/S-Tab глобально, чтобы не конфликтовать с blink.cmp
+      tabkey = "",
+      backwards_tabkey = "",
+      act_as_tab = true,
+      act_as_shift_tab = false,
+      default_tab = "<C-t>",
+      default_shift_tab = "<C-d>",
+      enable_backwards = true,
+      completion = false,
+      tabouts = {
+        { open = "'", close = "'" },
+        { open = '"', close = '"' },
+        { open = "`", close = "`" },
+        { open = "(", close = ")" },
+        { open = "[", close = "]" },
+        { open = "{", close = "}" },
+      },
+      ignore_beginning = true,
+      exclude = {},
+    },
+    keys = {
+      {
+        "<Tab>",
+        function()
+          if vim.snippet and vim.snippet.active({ direction = 1 }) then
+            return "<cmd>lua vim.snippet.jump(1)<cr>"
+          end
+          return "<Plug>(Tabout)"
+        end,
+        mode = "i",
+        expr = true,
+        silent = true,
+        desc = "Snippet jump or tabout",
+      },
+      {
+        "<S-Tab>",
+        function()
+          if vim.snippet and vim.snippet.active({ direction = -1 }) then
+            return "<cmd>lua vim.snippet.jump(-1)<cr>"
+          end
+          return "<Plug>(TaboutBack)"
+        end,
+        mode = "i",
+        expr = true,
+        silent = true,
+        desc = "Snippet jump back or tabout back",
+      },
+    },
+  },
 }
