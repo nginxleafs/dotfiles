@@ -17,7 +17,6 @@ if status is-interactive
     alias rgdb="rust-gdb"
     alias curl='xh'
     alias ff='fastfetch'
-    alias cat="bat"
 
     function mark_prompt_start --on-event fish_prompt
         cat ~/.cache/terminal-sequences 2>/dev/null
