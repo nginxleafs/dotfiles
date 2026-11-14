@@ -1,0 +1,39 @@
+{
+  "dmsAirDrop": {
+    "enabled": false
+  },
+  "batteryPlus": {
+    "enabled": true
+  },
+  "batteryOSD": {
+    "enabled": true
+  },
+  "tlpControl": {
+    "enabled": false
+  },
+  "tlpPowerProfile": {
+    "enabled": false
+  },
+  "librepods": {
+    "enabled": false
+  },
+  "calculator": {
+    "enabled": true,
+    "trigger": "="
+  },
+  "screenCaptureToolbar": {
+    "enabled": true
+  },
+  "quickCapture": {
+    "enabled": false
+  },
+  "bitwarden": {
+    "enabled": true
+  },
+  "dankTranslateAI": {
+    "enabled": true
+  },
+  "dankTranslate": {
+    "enabled": true
+  }
+}

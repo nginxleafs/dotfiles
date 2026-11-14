@@ -1,0 +1,4 @@
+# local/generated state
+**/fish/fish_variables*
+**/__pycache__/
+*.pyc

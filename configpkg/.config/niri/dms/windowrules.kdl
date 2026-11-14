@@ -1,0 +1,40 @@
+// DMS Window Rules - Managed by Dux Shell
+// Do not edit manually - changes may be overwritten
+
+// @id=dms-floating-windows @name=DMS Floating Windows
+window-rule {
+    match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"
+    open-floating true
+}
+
+// @id=wr_1792998255455441419 @name=main.py
+window-rule {
+    match app-id="^main.py$" at-startup=true
+    open-floating true
+}
+
+// @id=wr_1792998303305146988 @name=main.py
+window-rule {
+    match app-id="^main.py$"
+    open-floating true
+}
+
+// @id=wr_1793469786045769089 @name=main_file.py
+window-rule {
+    match app-id="^main_file.py$"
+    open-floating true
+}
+
+// @id=wr_1793550004938060355 @name=org.gnome.Loupe
+window-rule {
+    match app-id="^org.gnome.Loupe$"
+    open-floating true
+    default-column-width { fixed 800; }
+    default-window-height { fixed 600; }
+}
+
+// @id=dms-window-opaque @name=DMS Window Opaque
+window-rule {
+    match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"
+    opacity 1.00
+}
