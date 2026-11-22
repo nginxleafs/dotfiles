@@ -3,6 +3,7 @@ if status is-interactive
     set -g fish_greeting
     set -Ux EDITOR nvim
     set -Ux VISUAL nvim
+    bind \es 'fish_commandline_prepend sudo'
 
     command -v zoxide &>/dev/null && zoxide init fish | source
 
@@ -15,7 +16,6 @@ if status is-interactive
     alias i='sudo pacman -Syu'
     alias un='sudo pacman -Rns'
     alias rgdb="rust-gdb"
-    alias curl='xh'
     alias ff='fastfetch'
 
     function mark_prompt_start --on-event fish_prompt

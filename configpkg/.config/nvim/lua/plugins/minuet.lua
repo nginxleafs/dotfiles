@@ -1,6 +1,7 @@
 return {
   {
     "milanglacier/minuet-ai.nvim",
+    enabled = false,
     config = function()
       require("minuet").setup({
         provider = "openai_fim_compatible",
@@ -8,8 +9,11 @@ return {
         context_window = 4056,
 
         -- virtual text без автотриггера: вызов/переключение вручную по <A-]>
+        completion = {
+          enable = true,
+        },
         virtualtext = {
-          auto_trigger_ft = {},
+          auto_trigger_ft = { "*" },
           keymap = {
             accept = "<A-y>",
             accept_line = "<A-l>",

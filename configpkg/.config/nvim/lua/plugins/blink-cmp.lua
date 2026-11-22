@@ -42,7 +42,7 @@ return {
           },
         },
         menu = {
-          auto_show = true,
+          auto_show = false,
           draw = {
             treesitter = { "lsp" },
             columns = {
@@ -53,16 +53,17 @@ return {
           },
         },
         documentation = {
-          auto_show = true,
+          auto_show = false,
           auto_show_delay_ms = 200,
           window = {
             border = "rounded",
           },
         },
         ghost_text = {
-          enabled = false,
+          enabled = true,
         },
         list = {
+          max_items = 3,
           selection = {
             preselect = true,
             auto_insert = false,

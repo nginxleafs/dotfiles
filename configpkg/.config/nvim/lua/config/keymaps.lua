@@ -9,7 +9,6 @@ vim.keymap.set("n", "<leader>uv", function()
     virtual_text = detailed and { spacing = 4, prefix = "●" } or false,
     underline = detailed,
   })
-  vim.notify("Подробная диагностика: " .. (detailed and "вкл" or "выкл"))
 end, { desc = "Toggle detailed diagnostics" })
 
 vim.keymap.set("n", ";", ":", { desc = "CMD enter command mode" })

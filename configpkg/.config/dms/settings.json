@@ -6,7 +6,7 @@
   "widgetBackgroundColor": "default",
   "niriLayoutGapsOverride": 15,
   "touchpadAccelProfile": "flat",
-  "touchpadAccelSpeed": -0.3,
+  "touchpadAccelSpeed": 0,
   "touchpadScrollFactor": 0.3,
   "keyboardLayouts": "us,ru",
   "keyboardOptions": "grp:caps_toggle",
@@ -652,7 +652,7 @@
   "desktopWidgetInstances": [],
   "cardSurfaceColor": "default",
   "terminalOpacity": 90,
-  "blurredWallpaperLayer": true,
+  "blurredWallpaperLayer": false,
   "blurBorderEnabled": true,
   "blurEnabled": false,
   "blurBorderSeeded": true,
@@ -684,7 +684,7 @@
     }
   },
   "frameEnabled": true,
-  "frameRounding": 32,
+  "frameRounding": 23,
   "frameThickness": 20,
   "frameBarSize": 35,
   "launcherPluginVisibility": {
@@ -700,6 +700,15 @@
     "overview": {
       "panelColumns": 3,
       "panelRows": 2
+    },
+    "media": {
+      "animatedArt": true,
+      "smoothLyrics": false,
+      "albumArtAccent": false,
+      "artStyle": "rounded",
+      "albumArtBackdrop": false,
+      "panelRows": 2,
+      "panelColumns": 4
     }
   },
   "notificationHistoryMaxAgeDays": 1,
@@ -890,7 +899,16 @@
     }
   ],
   "lockScreenShowPowerActions": true,
-  "lockAtStartup": true,
+  "lockAtStartup": false,
   "lockScreenShowWeather": false,
-  "lockBeforeSuspend": true
+  "lockBeforeSuspend": true,
+  "animationDuration": 305,
+  "textRenderType": 0,
+  "textRenderQuality": 0,
+  "reduceMotion": false,
+  "mouseNaturalScroll": true,
+  "mouseAccelProfile": "flat",
+  "mouseLeftHanded": true,
+  "mouseAccelSpeed": -0.3,
+  "scrollTitleEnabled": true
 }
