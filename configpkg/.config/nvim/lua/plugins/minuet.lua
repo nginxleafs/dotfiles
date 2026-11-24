@@ -30,7 +30,7 @@ return {
           openai_fim_compatible = {
             api_key = "TERM",
             name = "Llama.cpp",
-            end_point = "http://192.168.3.121:8012/v1/completions",
+            end_point = "http://192.168.3.143:8012/v1/completions",
             model = "PLACEHOLDER",
 
             optional = {
